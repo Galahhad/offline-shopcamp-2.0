@@ -1,0 +1,6 @@
+.content {
+  width: 74%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

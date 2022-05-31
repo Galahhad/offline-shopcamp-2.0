@@ -1,0 +1,38 @@
+.table_wrapper {
+  position: absolute;
+  top: 53px;
+  right: 9px;
+  width: 450px;
+  background-color: white;
+  z-index: 1;
+  cursor: default;
+  color: black;
+  padding: 20px 10px;
+  border-radius: 3px;
+  transition: 0.4s;
+  box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2);
+}
+.table_wrapper:hover {
+  box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2);
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  width: 5%;
+  border-bottom: 2px solid;
+  padding: 5px;
+  text-align: start;
+}
+.close_button {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: gray;
+}
+.close_button:hover {
+  color: black;
+}

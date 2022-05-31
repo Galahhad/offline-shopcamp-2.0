@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  position: relative;
+}
+.header h3 {
+  cursor: pointer;
+}
+.bag_button {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+.icon {
+  font-size: 20px;
+}
+.counter_nums {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: -16px;
+  right: 2px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 12px;
+}
+.active {
+  color: rgb(0, 102, 255);
+}

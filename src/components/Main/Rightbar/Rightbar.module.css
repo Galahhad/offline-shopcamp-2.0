@@ -1,0 +1,25 @@
+.rightbar {
+  width: 20%;
+}
+.rightbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.rightbar li {
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.rightbar li:hover {
+  color: rgb(0, 102, 255);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.active li {
+  color: rgb(0, 102, 255);
+  border-color: rgb(0, 102, 255);
+}
