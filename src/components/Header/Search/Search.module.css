@@ -46,4 +46,7 @@
     padding: 8px 5px;
     cursor: pointer;
   }
+  .form input::placeholder {
+    font-size: 18px;
+  }
   
