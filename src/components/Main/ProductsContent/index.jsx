@@ -10,9 +10,9 @@ const ProductsContent = ({text}) => {
 
   const filtered = products.filter((item) => item.name.toUpperCase().includes(text.toUpperCase()));
 
-  const catOne = products.filter((item) => item.categoryId === 1);
-  const catTwo = products.filter((item) => item.categoryId === 2);
-  const catThree = products.filter((item) => item.categoryId === 3);
+  const catOne = filtered.filter((item) => item.categoryId === 1);
+  const catTwo = filtered.filter((item) => item.categoryId === 2);
+  const catThree = filtered.filter((item) => item.categoryId === 3);
 
   return (
     <section className={styles.content}>
