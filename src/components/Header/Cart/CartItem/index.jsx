@@ -14,10 +14,10 @@ const CartItem = ({ item, index }) => {
 
   const cartProduct = products.find((product) => product.id === item.productId);
 
-  const handleDelete = (id) => {
+  const handleDelete = (id, cartId) => {
     dispatch(
       deleteProduct({
-        cartId: index,
+        cartId: cartId,
         id: id,
         amount: item.amount,
       })
@@ -64,7 +64,7 @@ const CartItem = ({ item, index }) => {
       <td>
         <button
           className={styles.delete_button}
-          onClick={() => handleDelete(cartProduct.id)}
+          onClick={() => handleDelete(cartProduct.id, item.id)}
         >
           <IoMdClose />
         </button>
