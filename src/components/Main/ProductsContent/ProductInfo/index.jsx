@@ -29,10 +29,12 @@ const ProductInfo = ({ item }) => {
         <img src={item.image} alt={item.name} />
       </div>
       <div className={styles.prices_wrapper}>
-        <p className={styles.price}>{`${item.price}₽`}</p>
-        <p className={styles.discount}>
-          {`${item.price - (item.price / 100) * item.discount}₽`}
+      <p className={styles.price}>
+        {`${item.price - (item.price / 100) * item.discount}₽`}
         </p>
+        <p className={styles.discount}>
+          {item.discount > 0 ?`${item.price}₽` : '-'}
+          </p>
       </div>
       <p className={styles.product_name}>{item.name}</p>
       <button
