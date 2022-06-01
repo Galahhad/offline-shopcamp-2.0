@@ -131,7 +131,7 @@ export const reducer = createReducer(initialState, (builder) => {
       }
       return item;
     });
-    state.cartItems.splice(action.payload.cartId, 1);
+    state.cartItems = state.cartItems.filter((item) => item.id !== action.payload.cartId);
   });
   builder.addCase(inc, (state, action) => {
     state.cartItems.map((item) => {
